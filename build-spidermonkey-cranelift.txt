@@ -1,0 +1,81 @@
+- Assumptions:
+  - On Linux/x86-64 or Linux/aarch64
+  - System dev environment (C/C++ compiler, etc.) for m-c is installed
+  - Rust 1.42.0 installed locally (if not: `curl https://sh.rustup.rs | bash`)
+  - mozilla-central './mach bootstrap' has been run recently
+
+- Check out mozilla-central
+
+    $ hg clone --stream https://hg.mozilla.org/mozilla-central
+    # (or using git-cinnabar: git clone hg::https://hg.mozilla.org/...)
+
+    at hg rev: 046dfbddf738d8fd48401781ab0c0de8fdec723f
+
+- Apply patch D70900
+  - https://phabricator.services.mozilla.com/D70900, download raw diff, apply
+
+- Check out wasmtime arm64 branch
+
+    $ git clone -b arm64 https://github.com/cfallin/wasmtime
+    $ cd wasmtime/
+    $ git submodule update --init
+
+    at commit: 342949a2526afbb2613b1520fa00f29c53650bc4
+
+- Check out regalloc.rs
+
+    $ git clone https://github.com/bytecodealliance/wasmtime
+
+    at commit: f06ffd0cb5bd049717f4ea5408207a9e38b4ef6f
+
+- Edit wasmtime to refer to local regalloc.rs
+
+    - edit wasmtime/cranelift/codegen/Cargo.toml
+      - replace `regalloc = ...` with
+        `regalloc = { version = "*", path = "../../../regalloc.rs/lib" }`
+
+- check that wasmtime builds
+
+    $ cd wasmtime/; cargo build --release
+
+- Edit mozilla-central to refer to local wasmtime
+
+    - edit mozilla-central/Cargo.toml
+      - remove the two `[patch.crates-io.cranelift-*]` sections at bottom
+
+    - edit mozilla-central/js/src/wasm/cranelift/Cargo.toml
+      - remove cranelift-codegen, cranelift-wasm lines
+      - add:
+      ```
+      cranelift-codegen = { path = "../../../../../wasmtime/cranelift/codegen" }
+      cranelift-wasm = { path = "../../../../../wasmtime/cranelift/wasm" }
+      ```
+
+- Vendor wasmtime into mozilla-central
+
+    $ cd mozilla-central/; ./mach vendor rust --build-peers-said-large-imports-were-ok
+
+- Apply Ben's `folded-for-testing.patch` from Bug 1618595
+  - bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1618595
+  - raw patch: https://bug1618595.bmoattachments.org/attachment.cgi?id=9140365
+
+- Build
+
+  $ cd mozilla-central/js/src
+  $ autoconf2.13
+  $ mkdir BUILD_OPT.OBJ; cd BUILD_OPT.OBJ
+  $ ../configure --enable-debug --enable-optimize
+  $ make -j32
+
+- Run JS shell with Cranelift as Wasm backend
+
+  $ dist/bin/js --no-wasm-multi-value --shared-memory=off --ion-eager --wasm-compiler=cranelift
+
+- Verify that JS shell has not disabled Cranelift backend:
+
+  js> wasmCraneliftDisabledByFeatures()
+  false
+  js>
+
+  # if above returns a string like "multi-value,threads", some command-line
+  # options are missing.
