@@ -8,25 +8,29 @@ Evaluation steps
 
 2. Check out embenchen: https://github.com/kripken/embenchen
 
-   - We'll be using the Wasm tests in embenchen/asm\_v\_wasm.
+   - We'll be using the Wasm tests in `embenchen/asm_v_wasm`.
 
 3. Create "compile-only" versions of the toplevel .js programs:
 
-    # assuming $THIS_REPO is the path to this repo:
-
+    ```plain
+    $ # assuming $THIS_REPO is the path to this repository:
+    $
     $ cd embenchen/asm_v_wasm
     $ for x in asm2wasm_*.js; do $THIS_REPO/make_compile_only.sh $x; done
+    ```
 
 4. Run evaluations:
 
-    # on ARM64 machine:
-
+    ```plain
+    $ # on ARM64 machine:
+    $
     $ cd embenchen/asm_v_wasm
     $ $THIS_REPO/run_arm64.sh arm64.csv
 
-    # on x86 machine:
-
+    $ # on x86 machine:
+    $
     $ cd embenchen/asm_v_wasm
     $ $THIS_REPO/run_x86.sh x86.csv
+    ```
 
 5. Crunch the numbers!
