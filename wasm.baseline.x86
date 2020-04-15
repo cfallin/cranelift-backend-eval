@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec `dirname $0`/js.x86 --no-threads --no-wasm-multi-value --shared-memory=off --wasm-compiler=baseline --ion-offthread-compile=off "$@"
