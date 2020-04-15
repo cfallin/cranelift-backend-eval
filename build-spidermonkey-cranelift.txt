@@ -69,7 +69,7 @@
 
 - Run JS shell with Cranelift as Wasm backend
 
-  $ dist/bin/js --no-wasm-multi-value --shared-memory=off --ion-eager --wasm-compiler=cranelift
+  $ dist/bin/js --no-wasm-multi-value --shared-memory=off --wasm-compiler=cranelift
 
 - Verify that JS shell has not disabled Cranelift backend:
 
