@@ -14,7 +14,7 @@ for fff in asm2wasm_*.js; do
         echo == ${comp} == ${fff} ==
         rm -f cachegrind.out.xx
         QRUST_LOG=info RAYON_NUM_THREADS=1 \
-            vHOTBLOCKS --tool=cachegrind --vex-guest-chase=no \
+            $VALGRIND --tool=cachegrind --vex-guest-chase=no \
             --cache-sim=no \
             --cachegrind-out-file=cachegrind.out.xx \
             $JS \
