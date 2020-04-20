@@ -1,3 +1,3 @@
 #!/bin/bash
 
-exec `dirname $0`/js.arm64 --no-threads --no-wasm-multi-value --shared-memory=off --ion-eager --wasm-compiler=cranelift --ion-offthread-compile=off "$@"
+exec `dirname $0`/js.arm64 --no-threads --no-wasm-multi-value --shared-memory=off --wasm-compiler=cranelift --ion-offthread-compile=off "$@"
