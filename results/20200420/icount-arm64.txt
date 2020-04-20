@@ -1,0 +1,180 @@
+
+============================================
+
+== baseline == asm2wasm_base64.js ==
+15,928,664,742  PROGRAM TOTALS
+15,824,326,180  ???:???
+
+== cranelift == asm2wasm_base64.js ==
+13,964,539,149  PROGRAM TOTALS
+13,292,292,571  ???:???
+
+============================================
+
+== baseline == asm2wasm_box2d.js ==
+15,419,219,002  PROGRAM TOTALS
+15,292,825,075  ???:???
+
+== cranelift == asm2wasm_box2d.js ==
+16,150,413,181  PROGRAM TOTALS
+13,777,869,312  ???:???
+
+============================================
+
+== baseline == asm2wasm_bullet.js ==
+16,790,275,291  PROGRAM TOTALS
+16,400,565,257  ???:???
+
+== cranelift == asm2wasm_bullet.js ==
+25,969,589,635  PROGRAM TOTALS
+16,200,439,548  ???:???
+
+============================================
+
+== baseline == asm2wasm_conditionals.js ==
+4,399,291,713  PROGRAM TOTALS
+4,298,742,526  ???:???
+
+== cranelift == asm2wasm_conditionals.js ==
+5,195,855,655  PROGRAM TOTALS
+4,706,712,644  ???:???
+
+============================================
+
+== baseline == asm2wasm_copy.js ==
+9,102,627,902  PROGRAM TOTALS
+9,002,550,280  ???:???
+
+== cranelift == asm2wasm_copy.js ==
+8,310,351,591  PROGRAM TOTALS
+7,818,166,392  ???:???
+
+============================================
+
+== baseline == asm2wasm_corrections.js ==
+9,056,360,830  PROGRAM TOTALS
+8,956,071,919  ???:???
+
+== cranelift == asm2wasm_corrections.js ==
+5,367,313,303  PROGRAM TOTALS
+4,876,244,842  ???:???
+
+============================================
+
+== baseline == asm2wasm_fannkuch.js ==
+39,975,944,938  PROGRAM TOTALS
+39,868,708,595  ???:???
+
+== cranelift == asm2wasm_fannkuch.js ==
+30,873,948,478  PROGRAM TOTALS
+30,182,645,514  ???:???
+
+============================================
+
+== baseline == asm2wasm_fasta.js ==
+11,316,331,499  PROGRAM TOTALS
+11,208,697,794  ???:???
+
+== cranelift == asm2wasm_fasta.js ==
+8,585,063,861  PROGRAM TOTALS
+7,906,759,978  ???:???
+
+============================================
+
+== baseline == asm2wasm_havlak.js ==
+6,918,331,032  PROGRAM TOTALS
+6,798,236,079  ???:???
+
+== cranelift == asm2wasm_havlak.js ==
+8,235,826,840  PROGRAM TOTALS
+7,088,318,015  ???:???
+
+============================================
+
+== baseline == asm2wasm_ifs.js ==
+1,689,084,417  PROGRAM TOTALS
+1,588,985,622  ???:???
+
+== cranelift == asm2wasm_ifs.js ==
+2,159,370,623  PROGRAM TOTALS
+1,659,612,234  ???:???
+
+============================================
+
+== baseline == asm2wasm_linpack_double.c.js ==
+7,232,784,955  PROGRAM TOTALS
+7,114,753,826  ???:???
+
+== cranelift == asm2wasm_linpack_double.c.js ==
+6,142,080,761  PROGRAM TOTALS
+5,352,863,140  ???:???
+
+============================================
+
+== baseline == asm2wasm_lua_binarytrees.c.js ==
+53,142,179,835  PROGRAM TOTALS
+52,923,578,197  ???:???
+
+== cranelift == asm2wasm_lua_binarytrees.c.js ==
+82,845,306,510  PROGRAM TOTALS
+76,832,575,422  ???:???
+
+============================================
+
+== baseline == asm2wasm_lua_scimark.c.js ==
+3,714,300,440  PROGRAM TOTALS
+3,475,189,668  ???:???
+
+== cranelift == asm2wasm_lua_scimark.c.js ==
+9,300,277,808  PROGRAM TOTALS
+3,266,964,902  ???:???
+
+============================================
+
+== baseline == asm2wasm_matrix_multiply.js ==
+50,940,732,000  PROGRAM TOTALS
+50,829,685,150  ???:???
+
+== cranelift == asm2wasm_matrix_multiply.js ==
+33,391,976,039  PROGRAM TOTALS
+32,719,126,980  ???:???
+
+============================================
+
+== baseline == asm2wasm_memops.js ==
+27,787,138,698  PROGRAM TOTALS
+27,684,872,735  ???:???
+
+== cranelift == asm2wasm_memops.js ==
+19,910,050,335  PROGRAM TOTALS
+19,300,220,866  ???:???
+
+============================================
+
+== baseline == asm2wasm_primes.js ==
+7,620,845,628  PROGRAM TOTALS
+7,520,710,540  ???:???
+
+== cranelift == asm2wasm_primes.js ==
+4,748,928,656  PROGRAM TOTALS
+4,260,644,116  ???:???
+
+============================================
+
+== baseline == asm2wasm_skinning.js ==
+27,943,207,227  PROGRAM TOTALS
+27,840,471,719  ???:???
+
+== cranelift == asm2wasm_skinning.js ==
+15,550,943,889  PROGRAM TOTALS
+14,923,698,075  ???:???
+
+============================================
+
+== baseline == asm2wasm_zlib.c.js ==
+15,273,779,575  PROGRAM TOTALS
+15,132,661,734  ???:???
+
+== cranelift == asm2wasm_zlib.c.js ==
+22,743,060,605  PROGRAM TOTALS
+19,509,848,430  ???:???

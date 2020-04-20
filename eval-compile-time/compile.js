@@ -18,7 +18,7 @@ try {
     let before = dateNow();
     new WebAssembly.Module(binary);
     let time = dateNow() - before;
-    console.log('compilation took', time, 'milliseconds');
+    console.log('' + (time / 1000.0));
 } catch (err) {
     console.log("couldn't compile wasm module:", err);
     quit(3);

@@ -1,0 +1,252 @@
+
+============================================
+
+== baseline == asm2wasm_base64.js ==
+14,333,601,685 (100.0%)  PROGRAM TOTALS
+13,955,768,672 (97.36%)  ???:???
+
+== cranelift == asm2wasm_base64.js ==
+19,824,693,023 (100.0%)  PROGRAM TOTALS
+11,824,293,005 (59.64%)  ???:???
+
+== ion == asm2wasm_base64.js ==
+10,693,299,462 (100.0%)  PROGRAM TOTALS
+10,043,403,632 (93.92%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_box2d.js ==
+14,751,262,448 (100.0%)  PROGRAM TOTALS
+14,324,799,377 (97.11%)  ???:???
+
+== cranelift == asm2wasm_box2d.js ==
+40,921,077,935 (100.0%)  PROGRAM TOTALS
+10,472,728,708 (25.59%)  ???:???
+
+== ion == asm2wasm_box2d.js ==
+9,924,718,743 (100.0%)  PROGRAM TOTALS
+8,494,344,944 (85.59%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_bullet.js ==
+16,555,807,539 (100.0%)  PROGRAM TOTALS
+15,545,759,656 (93.90%)  ???:???
+
+== cranelift == asm2wasm_bullet.js ==
+138,077,279,012 (100.0%)  PROGRAM TOTALS
+12,840,580,116 ( 9.30%)  ???:???
+
+== ion == asm2wasm_bullet.js ==
+15,619,603,708 (100.0%)  PROGRAM TOTALS
+9,636,656,524 (61.70%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_conditionals.js ==
+5,580,026,252 (100.0%)  PROGRAM TOTALS
+5,210,574,741 (93.38%)  ???:???
+
+== cranelift == asm2wasm_conditionals.js ==
+11,016,114,967 (100.0%)  PROGRAM TOTALS
+6,020,910,208 (54.66%)  ???:???
+
+== ion == asm2wasm_conditionals.js ==
+4,637,961,452 (100.0%)  PROGRAM TOTALS
+4,111,119,198 (88.64%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_copy.js ==
+9,433,432,644 (100.0%)  PROGRAM TOTALS
+9,065,695,330 (96.10%)  ???:???
+
+== cranelift == asm2wasm_copy.js ==
+16,199,674,152 (100.0%)  PROGRAM TOTALS
+11,128,639,575 (68.70%)  ???:???
+
+== ion == asm2wasm_copy.js ==
+8,405,264,091 (100.0%)  PROGRAM TOTALS
+7,878,241,851 (93.73%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_corrections.js ==
+9,740,949,179 (100.0%)  PROGRAM TOTALS
+9,372,669,962 (96.22%)  ???:???
+
+== cranelift == asm2wasm_corrections.js ==
+13,653,512,070 (100.0%)  PROGRAM TOTALS
+8,622,104,268 (63.15%)  ???:???
+
+== ion == asm2wasm_corrections.js ==
+6,889,096,457 (100.0%)  PROGRAM TOTALS
+6,362,715,264 (92.36%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_fannkuch.js ==
+38,216,341,817 (100.0%)  PROGRAM TOTALS
+37,811,639,873 (98.94%)  ???:???
+
+== cranelift == asm2wasm_fannkuch.js ==
+37,981,461,995 (100.0%)  PROGRAM TOTALS
+29,759,488,724 (78.35%)  ???:???
+
+== ion == asm2wasm_fannkuch.js ==
+19,973,094,289 (100.0%)  PROGRAM TOTALS
+19,289,306,284 (96.58%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_fasta.js ==
+11,502,683,724 (100.0%)  PROGRAM TOTALS
+11,091,478,883 (96.43%)  ???:???
+
+== cranelift == asm2wasm_fasta.js ==
+18,753,324,689 (100.0%)  PROGRAM TOTALS
+10,557,850,673 (56.30%)  ???:???
+
+== ion == asm2wasm_fasta.js ==
+7,811,900,080 (100.0%)  PROGRAM TOTALS
+7,125,304,710 (91.21%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_havlak.js ==
+6,684,083,183 (100.0%)  PROGRAM TOTALS
+6,292,465,057 (94.14%)  ???:???
+
+== cranelift == asm2wasm_havlak.js ==
+20,489,812,663 (100.0%)  PROGRAM TOTALS
+5,452,010,657 (26.61%)  ???:???
+
+== ion == asm2wasm_havlak.js ==
+4,786,842,657 (100.0%)  PROGRAM TOTALS
+3,903,962,180 (81.56%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_ifs.js ==
+1,923,471,414 (100.0%)  PROGRAM TOTALS
+1,555,824,936 (80.89%)  ???:???
+
+== cranelift == asm2wasm_ifs.js ==
+6,382,261,844 (100.0%)  PROGRAM TOTALS
+1,184,954,388 (18.57%)  ???:???
+
+== ion == asm2wasm_ifs.js ==
+1,462,528,976 (100.0%)  PROGRAM TOTALS
+931,393,154 (63.68%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_linpack_double.c.js ==
+7,492,096,730 (100.0%)  PROGRAM TOTALS
+7,054,712,240 (94.16%)  ???:???
+
+== cranelift == asm2wasm_linpack_double.c.js ==
+15,367,581,132 (100.0%)  PROGRAM TOTALS
+5,972,277,152 (38.86%)  ???:???
+
+== ion == asm2wasm_linpack_double.c.js ==
+5,471,220,163 (100.0%)  PROGRAM TOTALS
+4,710,424,603 (86.09%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_lua_binarytrees.c.js ==
+50,007,154,843 (100.0%)  PROGRAM TOTALS
+49,288,049,104 (98.56%)  ???:???
+
+== cranelift == asm2wasm_lua_binarytrees.c.js ==
+119,256,067,591 (100.0%)  PROGRAM TOTALS
+46,758,525,783 (39.21%)  ???:???
+
+== ion == asm2wasm_lua_binarytrees.c.js ==
+40,428,898,696 (100.0%)  PROGRAM TOTALS
+37,086,143,438 (91.73%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_lua_scimark.c.js ==
+7,620,125,401 (100.0%)  PROGRAM TOTALS
+6,835,294,161 (89.70%)  ???:???
+
+== cranelift == asm2wasm_lua_scimark.c.js ==
+79,120,904,122 (100.0%)  PROGRAM TOTALS
+6,557,398,494 ( 8.29%)  ???:???
+
+== ion == asm2wasm_lua_scimark.c.js ==
+8,635,398,736 (100.0%)  PROGRAM TOTALS
+5,226,516,739 (60.52%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_matrix_multiply.js ==
+49,053,236,009 (100.0%)  PROGRAM TOTALS
+48,630,380,831 (99.14%)  ???:???
+
+== cranelift == asm2wasm_matrix_multiply.js ==
+53,293,059,379 (100.0%)  PROGRAM TOTALS
+45,419,930,307 (85.23%)  ???:???
+
+== ion == asm2wasm_matrix_multiply.js ==
+23,103,786,849 (100.0%)  PROGRAM TOTALS
+22,414,296,320 (97.02%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_memops.js ==
+26,380,316,270 (100.0%)  PROGRAM TOTALS
+26,007,788,888 (98.59%)  ???:???
+
+== cranelift == asm2wasm_memops.js ==
+36,403,211,255 (100.0%)  PROGRAM TOTALS
+29,363,813,694 (80.66%)  ???:???
+
+== ion == asm2wasm_memops.js ==
+17,396,363,067 (100.0%)  PROGRAM TOTALS
+16,780,401,130 (96.46%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_primes.js ==
+7,565,354,546 (100.0%)  PROGRAM TOTALS
+7,197,161,438 (95.13%)  ???:???
+
+== cranelift == asm2wasm_primes.js ==
+13,474,132,151 (100.0%)  PROGRAM TOTALS
+8,478,649,735 (62.93%)  ???:???
+
+== ion == asm2wasm_primes.js ==
+7,365,525,172 (100.0%)  PROGRAM TOTALS
+6,840,132,273 (92.87%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_skinning.js ==
+27,169,255,997 (100.0%)  PROGRAM TOTALS
+26,795,695,558 (98.63%)  ???:???
+
+== cranelift == asm2wasm_skinning.js ==
+19,969,049,985 (100.0%)  PROGRAM TOTALS
+12,640,256,758 (63.30%)  ???:???
+
+== ion == asm2wasm_skinning.js ==
+10,606,604,172 (100.0%)  PROGRAM TOTALS
+9,979,393,510 (94.09%)  ???:???
+
+============================================
+
+== baseline == asm2wasm_zlib.c.js ==
+15,402,852,888 (100.0%)  PROGRAM TOTALS
+14,720,479,138 (95.57%)  ???:???
+
+== cranelift == asm2wasm_zlib.c.js ==
+42,605,320,554 (100.0%)  PROGRAM TOTALS
+13,498,426,748 (31.68%)  ???:???
+
+== ion == asm2wasm_zlib.c.js ==
+11,321,007,651 (100.0%)  PROGRAM TOTALS
+9,676,438,792 (85.47%)  ???:???
