@@ -2,6 +2,10 @@
 
 VALGRIND="./valgrind"
 JS="./js"
+COMPS="baseline cranelift"
+if [ `uname -m` == "x86_64" ]; then
+  COMPS="$COMPS ion"
+fi
 
 for fff in asm2wasm_*.js; do
     echo $fff | grep -q _compile_only
@@ -9,7 +13,7 @@ for fff in asm2wasm_*.js; do
 
     echo
     echo ============================================
-    for comp in baseline cranelift; do
+    for comp in $COMPS; do
         echo
         echo == ${comp} == ${fff} ==
         rm -f cachegrind.out.xx
