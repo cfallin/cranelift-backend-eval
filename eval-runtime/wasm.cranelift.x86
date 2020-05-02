@@ -1,3 +1,3 @@
 #!/bin/bash
 
-exec `dirname $0`/js.x86 --no-threads --no-wasm-multi-value --shared-memory=off --wasm-compiler=cranelift --ion-offthread-compile=off "$@"
+exec `dirname $0`/js.x86 --no-threads --no-wasm-reftypes --no-wasm-multi-value --shared-memory=off --wasm-compiler=cranelift --ion-offthread-compile=off "$@"
