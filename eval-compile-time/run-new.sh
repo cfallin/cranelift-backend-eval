@@ -2,10 +2,10 @@
 
 ROOT=`dirname $0`
 if [ `uname -m` == "x86_64" ]; then
-  RUNNERS="./wasm.baseline.x86 ./wasm.cranelift.x86 ./wasm.ion.x86"
+  RUNNERS="$ROOT/wasm.baseline.x86 $ROOT/wasm.cranelift.x86 $ROOT/wasm.ion.x86"
   NAMES="Baseline (x86),Cranelift (x86), Ion (x86)"
 elif [ `uname -m` == "aarch64" ]; then
-  RUNNERS="./wasm.baseline ./wasm.cranelift-newbe"
+  RUNNERS="$ROOT/wasm.baseline $ROOT/wasm.cranelift-newbe"
   NAMES="Baseline (AArch64),Cranelift (AArch64)"
 else
   echo "Unsupported architecture: " `uname -m`

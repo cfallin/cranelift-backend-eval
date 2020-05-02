@@ -18,7 +18,6 @@ try {
 
 try {
     let before = dateNow();
-    console.log('compiling ' + trials + ' times...');
     for (var i = 0; i < trials; i++) {
       new WebAssembly.Module(binary);
     }
