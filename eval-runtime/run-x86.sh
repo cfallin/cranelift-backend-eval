@@ -35,19 +35,15 @@ run_time_5() {
 }
 
 five_commas=",,,,,"
-echo "Bench,x86 Baseline Compile${five_commas}x86 Baseline Comp+Run${five_commas}x86 Cranelift Compile${five_commas}x86 Cranelift Comp+Run${five_commas}x86 Ion Compile${five_commas}x86 Comp+Run${five_commas}" > $OUT
+echo "Bench,x86 Baseline${five_commas}x86 Cranelift${five_commas}x86${five_commas}" > $OUT
 
 for bench in asm2wasm_*.wasm; do
     bench=`basename $bench .wasm`
     mainjs_full="${bench}.js"
-    mainjs_compile="${bench}_compile_only.js"
 
-    base_compile=`run_time_5 $VM_BASELINE $mainjs_compile`
     base_full=`run_time_5 $VM_BASELINE $mainjs_full`
-    cl_compile=`run_time_5 $VM_CL $mainjs_compile`
     cl_full=`run_time_5 $VM_CL $mainjs_full`
-    ion_compile=`run_time_5 $VM_ION $mainjs_compile`
     ion_full=`run_time_5 $VM_ION $mainjs_full`
 
-    echo "$bench,${base_compile}${base_full}${cl_compile}${cl_full}${ion_compile}${ion_full}" >> $OUT
+    echo "$bench,${base_full}${cl_full}${ion_full}" >> $OUT
 done

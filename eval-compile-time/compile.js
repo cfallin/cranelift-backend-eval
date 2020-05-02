@@ -1,5 +1,7 @@
 // Usage: $jsshell ./compile.js /path/to/wasm-binary.wasm
 
+let trials = 10;
+
 if (scriptArgs.length !== 1) {
     console.log('one argument required: path to wasm binary');
 }
@@ -16,8 +18,11 @@ try {
 
 try {
     let before = dateNow();
-    new WebAssembly.Module(binary);
-    let time = dateNow() - before;
+    console.log('compiling ' + trials + ' times...');
+    for (var i = 0; i < trials; i++) {
+      new WebAssembly.Module(binary);
+    }
+    let time = (dateNow() - before) / trials;
     console.log('' + (time / 1000.0));
 } catch (err) {
     console.log("couldn't compile wasm module:", err);
